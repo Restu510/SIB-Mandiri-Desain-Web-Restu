@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <!-- Nama   : Restu Cipta Hadi Kusuma
+         Kampus : Politeknik Negeri Sriwijaya -->
+
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            margin: 50px;
+        }
+        th,td{
+            padding: 10px;
+        }
+
+        .background{
+            text-align: center;
+            background-color: rgb(209, 252, 153);
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        .gelap{
+            background-color: rgb(236, 248, 220);
+        }
+
+        .terang{
+            background-color: white;
+        }
+
+        table{      
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead class="background">
+            <th>HARI</th>
+            <TH>JAM</TH>
+            <TH>MATA KULIAH</TH>
+            <TH>DOSEN</TH>
+            <TH>RUANG</TH>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2" class="background">SENIN</td>
+                <td class="gelap">08.00 - 10.00</td>
+                <td class="gelap">Kajian Islam</td>
+                <td class="gelap">Ust. Anwar Nashidin, Lc.</td>
+                <td rowspan="1" class="gelap">Ruang Teori</td>
+            </tr>
+            <tr>
+                <td class="terang">10.00 - 12.00</td>
+                <td class="terang">Aplikasi Perkantoran</td>
+                <td class="terang">Drs. MGS Hendri, M.M</td>
+                <td rowspan="5" class="terang">Ruang I</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="background">SELASA</td>
+                <td class="gelap">08.00 - 10.00</td>
+                <td class="gelap">Linux Fundamental</td>
+                <td class="gelap">Henry Saptono, S.Si, M.Kom</td>
+            </tr>
+            <tr>
+                <td class="terang">10.00 - 12.00</td>
+                <td class="terang">Html, Css & Javascript</td>
+                <td rowspan="3" class="terang">Sirojul Munir, S.Si, M.Kom</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="background">RABU  </td>
+                <td class="gelap">08.00 - 10.00</td>
+                <td class="gelap">Basis Data</td>
+            </tr>
+            <tr>
+                <td class="terang">10.00 - 12.00</td>
+                <td class="terang">Algoritma dan Pemrograman</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="background">KAMIS</td>
+                <td class="gelap">08.00 - 10.00</td>
+                <td class="gelap">Kewirausahaan & Pengembangan Diri</td>
+                <td class="gelap">Khoirul Umam, S.Pd</td>
+                <td rowspan="2" class="gelap">Ruang Teori</td>
+            </tr>
+            <tr>
+                <td class="terang">10.00 - 12.00</td>
+                <td class="terang">Bahasa Inggris</td>
+                <td class="terang">Drs. Mahfudz</td>
+            </tr>
+
+            <tr>
+                <td class="background" colspan="5">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>     
