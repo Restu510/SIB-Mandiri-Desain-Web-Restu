@@ -1,0 +1,158 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Website</title>
+
+  <!--  Nama   : Restu Cipta Hadi Kusuma
+        Kampus : Politeknik Negeri Sriwijaya -->
+
+  <style>
+    body {
+      margin: 2px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #FFF5F5; 
+      color: #2C3E50;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+      grid-template-rows: auto auto 1fr auto;
+      height: 120vh;
+    }
+
+    header {
+      grid-area: header;
+      width: 100%;
+    }
+
+    .banner {
+      width: 100%;
+      height: 180px; 
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    nav {
+      grid-area: nav;
+      background: #FFDAB3; 
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #D5DBDB;
+    }
+
+    nav legend {
+      color: #5C6784; 
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 5px 0;
+    }
+
+    nav ul li a {
+      color: #2C3E50;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #F28B82; 
+    }
+
+    .content {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    aside, main, .aside2 {
+      background: #FFDAB3; 
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #D5DBDB;
+    }
+
+    fieldset {
+      border: 1px solid #D5DBDB;
+      border-radius: 6px;
+      color: #2C3E50;
+    }
+
+    legend {
+      color: #5C6784;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 6px;
+      background: #FFFFFF;
+    }
+
+    footer {
+      margin-top: 5px;
+      background: #FFDAB3 ;
+      border-radius: 8px;
+      border: 1px solid #D5DBDB;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/banner.png" alt="Banner Website" class="banner">
+    </header>
+
+    <nav>
+      <fieldset>
+        <legend>Menu Navigasi</legend>
+        <ul>
+          <li><a href="home.html" target="mainFrame">Home</a></li>
+          <li><a href="study.html" target="mainFrame">MyStudy</a></li>
+          <li><a href="gallery.html" target="mainFrame">Gallery</a></li>
+        </ul>
+      </fieldset>
+    </nav>
+
+    <div class="content">
+      <aside>
+        <fieldset>
+          <legend>Link Sosmed Teman</legend>
+          <iframe src="left.html"></iframe>
+        </fieldset>
+      </aside>
+
+      <main>
+        <iframe name="mainFrame" src="home.html"></iframe>
+      </main>
+
+      <div class="aside2">
+        <fieldset>
+          <legend>Materi Fullstack</legend>
+          <iframe src="right.html"></iframe>
+        </fieldset>
+      </div>
+    </div>
+
+    <footer>
+      <iframe src="footer.html" height="60px"></iframe>
+    </footer>
+  </div>
+</body>
+</html>
